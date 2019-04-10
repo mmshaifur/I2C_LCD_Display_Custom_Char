@@ -1,3 +1,7 @@
+/*
+Author: Shaifur Rahman
+Last Update: April 2019
+*/
 #include <Wire.h>
 #include <LiquidCrystal_I2C.h>
 LiquidCrystal_I2C lcd((0x3F,20,4); // set the LCD address to 0x27 for a 16 chars and 2 line display
@@ -12,7 +16,7 @@ void setup() {
  }
  
 void loop() {
- lcd.setCursor(0,0); // Set lcd cursor to the start of the first row
+ lcd.setCursor(0,0); 
  //lcd.print("test"); // Prints to the LCD
  lcd.print((char)0); // Custom char
  }
